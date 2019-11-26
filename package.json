@@ -1,11 +1,38 @@
 {
-  "name": "labnode",
+  "name": "myNode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "temp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
-  "author": "alex filatov",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "plugin": "^0.3.3",
+    "prettier": "^1.19.1"
+  },
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+
+  "lint-staged": {
+    "temp.js":[
+      "npm run lint:fix",
+      "git add"
+    ]
+  }
 }
