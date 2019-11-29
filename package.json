@@ -33,7 +33,7 @@
     }
   },
   "lint-staged": {
-    "./src/temp.js": [
+    "*.temp.js": [
       "npm run lint:fix",
       "git add"
     ]
