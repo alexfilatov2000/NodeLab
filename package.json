@@ -27,15 +27,15 @@
     "plugin": "^0.3.3",
     "prettier": "^1.19.1"
   },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add ."
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "lint-staged": {
-    "./src/temp.js": [
-      "npm run lint:fix",
-      "git add ."
-    ]
   }
 }
