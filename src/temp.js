@@ -2,8 +2,6 @@ const express = require('express');
 
 const app = express();
 
-var i = 8;
-
 const PORT = process.env.PORT || 80;
 
 app.get('/', (req, res) => {
