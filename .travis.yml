@@ -4,10 +4,11 @@ node_js:
 script:
   - npm test
 deploy:
-  provider: heroku:git
-  username: tanyaarni@gmail.com
-  password: Z4127052z.
+  provider: heroku
+  api_key:
+    secure: 5276ba1b-ee72-4aa4-a1d4-79ca1ca959be
+  app: mysterious-bastion-96788
+  on:
+    repo: alexfilatov2000/NodeLab
 
-notifications:
-  email: false
 
