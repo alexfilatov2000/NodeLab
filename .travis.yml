@@ -1,14 +1,12 @@
 language: node_js
 node_js:
-  - node
+- node
 script:
-  - npm test
+- npm test
 deploy:
   provider: heroku
-  api_key:
-    secure: 5276ba1b-ee72-4aa4-a1d4-79ca1ca959be
   app: mysterious-bastion-96788
   on:
     repo: alexfilatov2000/NodeLab
-
-
+  key:
+    secure: moZtNZ6Lf+26TLQsCGUvHDhos2hmQrNNKN4DWoELhkqE0s2C4mWwgMAD/IUxlPUUMiN190cjnzuKhFb4rtmvVZsLz/Gda6H3l/xK0eOtNV00n2teQK0CZAKPiE/ffa8DKGMFkGxnFFRsIwZBBqBE6Z2hPoLYTeU64UPxoJrTEfHU44H0GKwrxO7sajXDSoJ+Wq2d76QSbdtCjB6SdcCmWE+2VGoJkPJYaN0GFaX33R2lMT7IWmB+UcwP9HrSvxJky/TW2iBL6ThsfiG4/4WCt2dBacNGF+Ez6BXo6V7Y2kuDrppcy1VvaIYef58p2uD33YKfXtRh71n1CMRo//5arkVLhj4GhBEDRuGApV7SUwSNjIpBkJAO8ophL2087u4P7rzWKULZrevgW7ngtz39mTbgOn6aqBuxVEroNXKIU58z3nE1Y6hT9TEW3bdXzDQFdMtN7D120XPx1RX1Zcu9ThSDTKIB2ko5Ll8N+znjkh8cl1uNUnmNWS0SqRUCuUDO72vphlqGW+qlRjgyeYUANp0+cbkzQP6m3EeEFhcOY3N1JnWRlJFv3TZQSNIbB2sGtYzirBaS18/DEdcxR5LLkhASSk5N8ctBVLr8rNad4VTaXyKk8+aoZCkBCeu+rMWaoTZ4iecPUR46swrrXKGTyca2+jPPNSQn8QG3ZjqvPFk=
